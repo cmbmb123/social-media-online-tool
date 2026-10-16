@@ -23,7 +23,7 @@ $(function() {
 	// If the study is called with a parameter for redirection, as explained in the documentation, this value is overwritten. 
 	// To the redirect link, the following information will be appended: (1) participant number, (2) condition, (3) username, (4) description submitted by participant. These variables can be extracted from the link, saved as data, and used for linking the Social Media Ostracism paradigm to subsequent tasks and measures. See documentation for more details.
 
-    settings.defaultredirect = 'http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT';
+    settings.defaultredirect = 'https://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT';
 
 	
 	// **Tasklength**     
@@ -382,7 +382,7 @@ $(function() {
   
 
   // The variable QueryString contains the url parameters, i.e. condition no. and participant no.
-  // via http://stackoverflow.com/a/979995
+  // via https://stackoverflow.com/a/979995
   window.QueryString = function () {
     var query_string = {};
     var query = window.location.search.substring(1);
@@ -406,7 +406,7 @@ $(function() {
 
 
   // Function to check letters and numbers
-  // via http://www.w3resource.com/javascript/form/letters-numbers-field.php
+  // via https://www.w3resource.com/javascript/form/letters-numbers-field.php
   function not_alphanumeric(inputtxt) {
     var letterNumber = /^[0-9a-zA-Z]+$/;
     if(inputtxt.match(letterNumber)) {
@@ -418,13 +418,13 @@ $(function() {
 
 
   // Function to add extra zeros infront of numbers (used for the countdown)
-  // via http://stackoverflow.com/a/6466243
+  // via https://stackoverflow.com/a/6466243
   function pad (str, max) {
     return str.length < max ? pad("0" + str, max) : str;
   }
 
   // Function for encoding and decoding URLs
-  // via http://meyerweb.com/eric/tools/dencoder/
+  // via https://meyerweb.com/eric/tools/dencoder/
   function encode(unencoded) {
 	return encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");	
   }
@@ -434,7 +434,7 @@ $(function() {
 
   
   // Simple Countdown
-  // via http://davidwalsh.name/jquery-countdown-plugin
+  // via https://davidwalsh.name/jquery-countdown-plugin
   jQuery.fn.countDown = function(settings,to) {
     settings = jQuery.extend({
       startFontSize: "12px",
